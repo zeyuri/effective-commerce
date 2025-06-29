@@ -32,9 +32,6 @@ Powered with several **Linting Tools** and **Commit Hooks**, it will help you co
 - [Workflow](#workflow)
   - [Commit, Conventions and Hooks](#commit-conventions-and-hooks)
   - [GitHub Actions](#github-actions)
-  - [Changesets](#changesets)
-  - [Versioning](#versioning)
-  - [Publishing to npm](#publishing-to-npm)
   - [GitHub Package Registry](#github-package-registry)
 - [Contributing to TurboBun](#contributing-to-turbobun)
 - [Inspired By](#inspired-by)
@@ -197,59 +194,9 @@ To enforce hooks installation add this to `packages.json`:
 
 ### GitHub Actions
 
-`CHANGELOG`, *versioning* and *publishing* is managed by **Changesets**
-
 CI/CD and deploy will be managed by **Vercel**.
 
 There is no need for **GitHub Actions**
-
-### Changesets
-
-To record a change, run:
-
-```sh
-bun changeset
-```
-
-Follow the prompts to describe the changes. Changesets will create a markdown
-file in the `.changeset` directory detailing the changes.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Versioning
-
-When it's time to release, run:
-
-```sh
-bun changeset version
-```
-
-This command will bump the versions of the affected packages and update the
-changelogs.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Publishing to npm
-
-To publish the packages to npm, run:
-
-```sh
-bun changeset publish
-```
-
-If you want to publish package to the public npm registry and make them publicly
-available, this is already setup.
-
-To publish packages to a private npm organization scope, **remove** the
-following from each of the `package.json`'s
-
-```diff
-- "publishConfig": {
-- "access": "public"
-- },
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### GitHub Package Registry
 
