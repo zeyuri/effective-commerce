@@ -30,6 +30,8 @@ This is a TurboBun monorepo - a modern full-stack e-commerce template using Bun 
 - `bun commit` - Use interactive commit with commitizen (conventional commits)
 - `lefthook install` - Optional: Install git hooks for automated checks
 
+When creating commit messages, follow the conventional commit format defined in `commitlint.config.cjs`. The configuration includes commit types with emojis and follows the pattern: `<type>(<scope>): <subject>`
+
 ## Architecture
 
 ### Monorepo Structure

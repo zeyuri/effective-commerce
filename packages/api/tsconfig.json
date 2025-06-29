@@ -1,5 +1,12 @@
 {
   "extends": "@turbobun/typescript-config/base.json",
   "include": ["*.ts", "src"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@effect/language-service"
+      }
+    ]
+  }
 }

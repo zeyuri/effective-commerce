@@ -7,7 +7,8 @@
   "types": "./src/index.ts",
   "scripts": {
     "clean": "git clean -xdf .turbo node_modules",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tspc --noEmit",
+    "prepare": "ts-patch install -s"
   },
   "dependencies": {
     "@effect/platform": "^0.87.1",
@@ -15,7 +16,9 @@
     "effect": "^3.16.10"
   },
   "devDependencies": {
+    "@effect/language-service": "^0.23.3",
     "@turbobun/typescript-config": "workspace:*",
+    "ts-patch": "^3.3.0",
     "typescript": "5.8.3"
   }
 }

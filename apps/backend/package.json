@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "bun run --watch src/index.ts",
     "start": "bun run src/index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tspc --noEmit",
+    "prepare": "ts-patch install -s"
   },
   "dependencies": {
     "@effect/platform": "^0.87.1",
@@ -19,8 +20,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
+    "@effect/language-service": "^0.23.3",
+    "@turbobun/typescript-config": "*",
     "@types/bun": "1.2.17",
     "@types/node": "24.0.7",
-    "@turbobun/typescript-config": "*"
+    "ts-patch": "^3.3.0"
   }
 }
