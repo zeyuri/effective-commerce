@@ -17,7 +17,7 @@ export const ProductGroupLive = HttpApiBuilder.group(
             Request: Product.pipe(Schema.omit("id", "created_at")),
             Result: Product,
             execute: (requests) =>
-              sql`INSERT INTO product ${sql.insert(requests)} RETURNING *`,
+              sql`INSERT INTO products ${sql.insert(requests)} RETURNING *`,
           });
 
           return yield* InsertProduct.execute({ name: payload.name, price: payload.price });
@@ -35,7 +35,7 @@ export const ProductGroupLive = HttpApiBuilder.group(
             Result: Product,
             ResultId: (_) => _.id,
             execute: (ids) =>
-              sql`SELECT * FROM product WHERE ${sql.in("id", ids)}`,
+              sql`SELECT * FROM products WHERE ${sql.in("id", ids)}`,
           });
 
           const getById = flow(

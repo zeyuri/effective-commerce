@@ -10,7 +10,7 @@ export class Product extends Schema.Class<Product>("Product")({
   id: Schema.Number,
   name: Schema.String,
   price: Schema.Number,
-  created_at: Schema.DateFromSelf,
+  created_at: Schema.String,
 }) {}
 
 class ProductGroup extends HttpApiGroup.make("product")
