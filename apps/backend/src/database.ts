@@ -1,5 +1,5 @@
-import { SqliteClient } from "@effect/sql-sqlite-bun";
+import { SqliteClient } from '@effect/sql-sqlite-bun'
 
 export const DatabaseLive = SqliteClient.layer({
-  filename: "./database.db",
-});
+  filename: './database.db',
+})
