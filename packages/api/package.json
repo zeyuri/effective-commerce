@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Elysia backend example",
   "license": "MIT",
+  "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "scripts": {

@@ -1,6 +1,7 @@
 {
   "name": "@turbobun/monorepo",
   "private": true,
+  "type": "module",
   "description": "Example of Turborepo setup with Bun, Biome/OXC and commitizen stuff.",
   "packageManager": "bun@1.2.17",
   "workspaces": [
@@ -36,11 +37,5 @@
     "lefthook": "1.11.14",
     "turbo": "^2.5.4",
     "typescript": "5.8.3"
-  },
-  "dependencies": {
-    "@effect/platform": "^0.87.1",
-    "@effect/platform-bun": "^0.72.3",
-    "@effect/schema": "^0.75.5",
-    "effect": "^3.16.10"
   }
 }

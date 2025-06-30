@@ -1,6 +1,7 @@
 {
   "name": "@turbobun/backend",
   "version": "0.0.1",
+  "type": "module",
   "main": "./src/index.ts",
   "module": "src/index.ts",
   "scripts": {
